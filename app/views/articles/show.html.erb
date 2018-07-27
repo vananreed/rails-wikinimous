@@ -1,0 +1,6 @@
+<h1><%= @article.title.upcase %></h1>
+<p><%= @article.content %></p>
+
+<%= link_to "Edit Aritcle", edit_article_path(@article.id) %>
+
+<%= link_to "Back to List", root_path %>
