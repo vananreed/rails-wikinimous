@@ -1,3 +1,37 @@
 // Place all the styles related to the articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.body {
+  margin: 10px;
+
+}
+.container {
+  margin-top: 50px;
+  width: 100vw;
+  margin-bottom: 100px;
+  font-family: Georgia;
+}
+.card {
+  padding: 20px;
+  background-color: #80808026;
+  margin: 10px;
+  border-radius: 3px;
+}
+
+.card span {
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.btn-primary {
+  background-color: #65affffa;
+}
+
+.btn.btn-primary:hover a{
+  text-decoration: none;
+  color: white;
+}

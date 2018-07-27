@@ -1,9 +1,15 @@
-<h3>Articles</h3>
-<div class="container">
-  <% @articles.each do |article|%>
-    <div class="card">
-      <%= link_to "#{article.title}", article_path(article.id) %><span><%= link_to "Delete", article_path(article), method: :delete %></span>
-    </div>
-  <% end %>
-  <%= link_to "Add an Article", new_article_path %>
+<div class="container text-center">
+  <h3>Articles</h3>
+  <div class="row">
+    <% @articles.each do |article|%>
+      <div class="col-sm-8 offset-sm-2 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+        <div class="card">
+        <%= link_to "#{article.title}", article_path(article.id) %><span><%= link_to '<i class="far fa-trash-alt"></i>'.html_safe, article_path(article), method: :delete, data: { confirm: "Are you sure?" } %></span>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  <div class="btn btn-primary">
+    <%= link_to "Add an Article", new_article_path %>
+  </div>
 </div>
